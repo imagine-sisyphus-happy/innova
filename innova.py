@@ -40,7 +40,7 @@ class SecurityAuditor:
     def audit_security(self, code: str) -> List[str]:
         vulnerabilities = []
         
-        # Check for SQL injection risks (very simplified)
+        # Check for SQL injection risks
         if "SELECT * FROM" in code and "WHERE" not in code:
             vulnerabilities.append("Potential SQL injection risk detected.")
         
@@ -60,8 +60,7 @@ class CodeModernizer:
         return modernized_code
 
 
-class AICE:
-    """AI-Driven Code Evolution System"""
+class Innova:
     
     def __init__(self):
         self.optimizer = CodeOptimizer()
@@ -122,8 +121,8 @@ def get_data_from_db():
     """
     
     # Instantiate AICE system and perform analysis
-    aice_system = AICE()
-    aice_system.perform_full_analysis(sample_code)
+    innova_system = Innova()
+    innova_system.perform_full_analysis(sample_code)
 
 #1. Requirements Analysis & Planning
 
